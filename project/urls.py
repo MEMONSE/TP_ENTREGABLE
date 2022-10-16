@@ -20,6 +20,6 @@ from Ejercicio.views import index,mostrar_familiares
 urlpatterns = [
     path('admin/', admin.site.urls),
      path('Entrega/', index),
-     path('mostrar_familia/', mostrar_familiares),
+     path('mostrar_mi_familia/', mostrar_familiares),
     
 ]

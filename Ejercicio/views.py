@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from Ejercicio.models import Familiar
 
 # Create your views here.
 def index(request):
@@ -6,6 +7,7 @@ def index(request):
 
 
 def mostrar_familiares(request):
-  lista_familiares = ["Mama","pe"] #Familiar.objects.all()
-  return render(request, "Ejercicio/Entrega.html", 
+  lista_familiares = Familiar.objects.all()
+  return render(request, "Ejercicio/familiares.html", 
                 {"lista_familiares": lista_familiares})
+  
